@@ -1,0 +1,326 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #f39c12;
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+    --card-bg: #1e1e1e;
+    --card-hover: #2a2a2a;
+    --light-text: #f5f5f5;
+    --gray-text: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--light-text);
+    background-color: var(--dark-bg);
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background-color: var(--darker-bg);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--light-text);
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--gray-text);
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--light-text);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--gray-text);
+}
+
+/* Tiles Section */
+.tiles-section {
+    padding: 30px 0 80px;
+}
+
+.tiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tile {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+}
+
+.tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: var(--card-hover);
+}
+
+/* App Tiles - Special Styling */
+.app-tile {
+    border: 2px solid var(--primary-color);
+    background: linear-gradient(135deg, var(--card-bg) 0%, #252525 100%);
+}
+
+.app-tile:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-12px) scale(1.02);
+}
+
+.app-tile.placeholder {
+    border: 2px dashed var(--gray-text);
+    opacity: 0.7;
+}
+
+.app-tile.placeholder:hover {
+    border-color: var(--primary-color);
+    opacity: 0.9;
+}
+
+/* Info Tiles - Subtle Styling */
+.info-tile {
+    background-color: var(--card-bg);
+}
+
+.tile-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+.tile-content i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.app-tile .tile-content i {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+}
+
+.tile-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.tile-content p {
+    color: var(--gray-text);
+    margin-bottom: 10px;
+}
+
+.app-status {
+    font-size: 0.9rem;
+    color: var(--secondary-color) !important;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.tile-links {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.tile-links .btn {
+    display: block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tile-links .btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.btn-app {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #e67e22 100%);
+    font-size: 1.1rem;
+    padding: 12px 20px;
+}
+
+.btn-app:hover {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #27ae60 100%);
+}
+
+.btn-disabled {
+    background-color: var(--gray-text);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.btn-disabled:hover {
+    background-color: var(--gray-text);
+    transform: none;
+}
+
+.coming-soon {
+    font-style: italic;
+    color: var(--gray-text);
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+    color: var(--light-text);
+}
+
+/* Footer */
+footer {
+    background-color: var(--darker-bg);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright {
+    color: var(--gray-text);
+}
+
+/* Impressum Page */
+.impressum-section {
+    padding: 80px 0;
+}
+
+.impressum-content {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.impressum-content h2 {
+    margin-bottom: 30px;
+}
+
+.impressum-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tiles-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    .intro-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .tile-content i {
+        font-size: 2.5rem;
+    }
+    
+    .app-tile .tile-content i {
+        font-size: 3rem;
+    }
+}
