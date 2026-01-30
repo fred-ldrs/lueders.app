@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin Trivia</title>
+    <title>Bitcoin Trivia - lueders.app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Bitcoin Trivia</h1>
-    <p>Experience the fun of Bitcoin Trivia.</p>
-    <div class="section">
-        <h2>FAQ Section</h2>
-        <ul>
-            <li>Question 1: What is Bitcoin?</li>
-            <li>Answer: A form of digital currency.</li>
-            <li>Question 2: How to buy Bitcoin?</li>
-            <li>Answer: Through exchanges.</li>
-        </ul>
-    </div>
-    <div class="section">
-        <h2>BGG Section</h2>
-        <p><a href="https://boardgamegeek.com/boardgame/451160/bitcoin-trivia" class="btn btn-app" target="_blank">View on BGG</a></p>
-    </div>
-    <div class="section">
-        <h2>Android App Section</h2>
-        <p>Coming Soon</p>
-    </div>
+    <header>
+        <div class="container">
+            <h1>lueders.app</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <h2>Bitcoin Trivia</h2>
+                <p>Interactive knowledge quiz about Bitcoin. Implementation in multiple formats.</p>
+            </div>
+        </section>
+
+        <section class="tiles-section">
+            <div class="container">
+                <div class="tiles-grid">
+                    <!-- Web Version -->
+                    <div class="tile app-tile">
+                        <div class="tile-content">
+                            <i class="fas fa-globe"></i>
+                            <h3>Web Version</h3>
+                            <p>Simple, static quiz page.</p>
+                            <p class="app-status">Technologies: HTML, CSS, JS</p>
+                            <div class="tile-links">
+                                <a href="https://bitcointrivia.org" class="btn btn-app" target="_blank">bitcointrivia.org</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Print-and-Play -->
+                    <div class="tile app-tile">
+                        <div class="tile-content">
+                            <i class="fas fa-print"></i>
+                            <h3>Print-and-Play</h3>
+                            <p>Printable cards for workshops and groups.</p>
+                            <p class="app-status">Format: PDF Cards</p>
+                            <div class="tile-links">
+                                <a href="https://boardgamegeek.com/boardgame/451160/bitcoin-trivia" class="btn btn-app" target="_blank">View on BGG</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Android App -->
+                    <div class="tile app-tile">
+                        <div class="tile-content">
+                            <i class="fab fa-android"></i>
+                            <h3>Android App</h3>
+                            <p>Cross-platform app with SQLite data storage and UI logic.</p>
+                            <p class="app-status">Technologies: Flutter, SQLite</p>
+                            <div class="tile-links">
+                                <span class="btn btn-disabled">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 Frederik Lüders &nbsp;|&nbsp; <a href="impressum.html">Impressum</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
