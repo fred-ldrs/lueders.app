@@ -298,6 +298,62 @@ footer {
     margin-bottom: 15px;
 }
 
+/* Content Section (for project description pages) */
+.content-section {
+    padding: 40px 0 80px;
+}
+
+.content-section .container {
+    max-width: 900px;
+}
+
+.section-block {
+    margin-bottom: 50px;
+}
+
+.section-block h3 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(243, 156, 18, 0.3);
+}
+
+.section-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray-text);
+    margin-bottom: 15px;
+}
+
+.section-block ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-block ul li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--gray-text);
+    margin-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.section-block ul li::before {
+    content: "▪";
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.section-block ul li strong {
+    color: var(--light-text);
+    font-size: 1.1rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .tiles-grid {
