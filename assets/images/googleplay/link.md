@@ -1,0 +1,1 @@
+https://partnermarketinghub.withgoogle.com/brands/google-play/visual-identity/badge-guidelines/
