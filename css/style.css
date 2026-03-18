@@ -105,6 +105,21 @@ nav ul li a:hover, nav ul li a.active {
     padding: 30px 0 80px;
 }
 
+.project-group {
+    margin-top: 60px;
+}
+
+.project-group-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .tiles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
