@@ -29,6 +29,29 @@ Die Seite basiert auf dem Design von lueders.solutions mit:
 - Spezielle Hervorhebung für App-Tiles
 - Font Awesome Icons
 
+## Lizenz & Markenrecht (Icons)
+
+### Font Awesome
+- Icons: [SIL OFL 1.1](https://scripts.sil.org/OFL)
+- Code: [MIT License](https://opensource.org/licenses/MIT)
+- Dokumentation: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Quelle: https://fontawesome.com/license
+
+### Android-Logo (`fab fa-android`)
+- **Android-Roboter** (das grüne Männchen): von Google unter **CC BY 3.0** lizenziert, frei verwendbar mit Attributionshinweis.
+- **"Android"-Wortmarke**: darf laut Google nur auf Hardware, Verpackung oder Marketingmaterialien für Android-kompatible Geräte verwendet werden — **nicht** für Websites wie diese.
+- Das FontAwesome-Icon `fab fa-android` zeigt den Roboter, nicht die Wortmarke → grundsätzlich verwendbar, aber Vorsicht bei der Kombination mit dem Text "Android".
+- Quelle: https://developer.android.com/distribute/marketing-tools/brand-guidelines
+
+### GitHub-Logo (`fab fa-github`)
+- Verwendung erlaubt, wenn auf das eigene GitHub-Profil oder Repository verlinkt wird.
+- Quelle: https://github.com/logos
+
+### Google Play Store Badge
+- Das Play Store Badge/Logo unterliegt den strikten Google Brand Guidelines und darf **nicht** frei verwendet werden.
+- Empfehlung: Neutrales Icon (`fas fa-code`) oder Android-Logo statt Play Store Badge verwenden.
+- Quelle: https://about.google/brand-resource-center/
+
 ## Apps
 
 ### Bitcoin Trivia
